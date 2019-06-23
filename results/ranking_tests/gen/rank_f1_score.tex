@@ -1,0 +1,169 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{lscape}
+\title{Output tables for the test of Multiple comparisons.}
+\author{}
+\date{\today}
+\begin{document}
+\begin{landscape}
+\pagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+\section{Average rankings of Friedman test}
+
+
+
+Average ranks obtained by applying the Friedman procedure
+
+\begin{table}[!htp]
+\centering
+\begin{tabular}{|c|c|}\hline
+Algorithm&Ranking\\\hline
+DSC-R & 2.575\\
+DSC-S & 1.9333\\
+KMeanClustering & 6.1083\\
+LearnppCDS & 3.7167\\
+LearnppNIE & 4.8417\\
+REA & 2.9667\\
+OUSE & 6.325\\
+MLPClassifier & 7.5333\\
+\hline
+\end{tabular}
+\caption{Average Rankings of the algorithms}
+\end{table}
+
+Friedman statistic considering reduction performance (distributed according to chi-square with 7 degrees of freedom: 284.933333.
+
+P-value computed by Friedman Test: 1.3832102130351132E-10.\newline
+
+
+
+\pagebreak
+
+\section{Post hoc comparisons}
+
+Results achieved on post hoc comparisons for $\alpha = 0.05$, $\alpha = 0.10$ and adjusted p-values.
+
+\subsection{P-values for $\alpha=0.05$}
+
+\begin{table}[!htp]
+\centering\scriptsize
+\begin{tabular}{cccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$\\
+\hline28&DSC-S vs. MLPClassifier&12.521981&0\\
+27&DSC-R vs. MLPClassifier&11.08717&0\\
+26&REA vs. MLPClassifier&10.211377&0\\
+25&DSC-S vs. OUSE&9.820065&0\\
+24&DSC-S vs. KMeanClustering&9.335584&0\\
+23&LearnppCDS vs. MLPClassifier&8.534326&0\\
+22&DSC-R vs. OUSE&8.385255&0\\
+21&DSC-R vs. KMeanClustering&7.900774&0\\
+20&REA vs. OUSE&7.509462&0\\
+19&KMeanClustering vs. REA&7.02498&0\\
+18&DSC-S vs. LearnppNIE&6.503231&0\\
+17&LearnppNIE vs. MLPClassifier&6.01875&0\\
+16&LearnppCDS vs. OUSE&5.832411&0\\
+15&KMeanClustering vs. LearnppCDS&5.347929&0\\
+14&DSC-R vs. LearnppNIE&5.068421&0\\
+13&LearnppNIE vs. REA&4.192627&0.000028\\
+12&DSC-S vs. LearnppCDS&3.987655&0.000067\\
+11&LearnppNIE vs. OUSE&3.316834&0.00091\\
+10&KMeanClustering vs. MLPClassifier&3.186397&0.001441\\
+9&KMeanClustering vs. LearnppNIE&2.832353&0.004621\\
+8&OUSE vs. MLPClassifier&2.701915&0.006894\\
+7&DSC-R vs. LearnppCDS&2.552844&0.010685\\
+6&LearnppCDS vs. LearnppNIE&2.515576&0.011884\\
+5&DSC-S vs. REA&2.310604&0.020855\\
+4&LearnppCDS vs. REA&1.677051&0.093533\\
+3&DSC-R vs. DSC-S&1.43481&0.151341\\
+2&DSC-R vs. REA&0.875793&0.381142\\
+1&KMeanClustering vs. OUSE&0.484481&0.628044\\
+\hline
+\end{tabular}
+\caption{P-values Table for $\alpha=0.05$}
+\end{table}Nemenyi's procedure rejects those hypotheses that have an unadjusted p-value $\le0.001786$.
+
+\pagebreak
+
+\subsection{P-values for $\alpha=0.10$}
+
+\begin{table}[!htp]
+\centering\scriptsize
+\begin{tabular}{cccc}
+$i$&algorithms&$z=(R_0 - R_i)/SE$&$p$\\
+\hline28&DSC-S vs. MLPClassifier&12.521981&0\\
+27&DSC-R vs. MLPClassifier&11.08717&0\\
+26&REA vs. MLPClassifier&10.211377&0\\
+25&DSC-S vs. OUSE&9.820065&0\\
+24&DSC-S vs. KMeanClustering&9.335584&0\\
+23&LearnppCDS vs. MLPClassifier&8.534326&0\\
+22&DSC-R vs. OUSE&8.385255&0\\
+21&DSC-R vs. KMeanClustering&7.900774&0\\
+20&REA vs. OUSE&7.509462&0\\
+19&KMeanClustering vs. REA&7.02498&0\\
+18&DSC-S vs. LearnppNIE&6.503231&0\\
+17&LearnppNIE vs. MLPClassifier&6.01875&0\\
+16&LearnppCDS vs. OUSE&5.832411&0\\
+15&KMeanClustering vs. LearnppCDS&5.347929&0\\
+14&DSC-R vs. LearnppNIE&5.068421&0\\
+13&LearnppNIE vs. REA&4.192627&0.000028\\
+12&DSC-S vs. LearnppCDS&3.987655&0.000067\\
+11&LearnppNIE vs. OUSE&3.316834&0.00091\\
+10&KMeanClustering vs. MLPClassifier&3.186397&0.001441\\
+9&KMeanClustering vs. LearnppNIE&2.832353&0.004621\\
+8&OUSE vs. MLPClassifier&2.701915&0.006894\\
+7&DSC-R vs. LearnppCDS&2.552844&0.010685\\
+6&LearnppCDS vs. LearnppNIE&2.515576&0.011884\\
+5&DSC-S vs. REA&2.310604&0.020855\\
+4&LearnppCDS vs. REA&1.677051&0.093533\\
+3&DSC-R vs. DSC-S&1.43481&0.151341\\
+2&DSC-R vs. REA&0.875793&0.381142\\
+1&KMeanClustering vs. OUSE&0.484481&0.628044\\
+\hline
+\end{tabular}
+\caption{P-values Table for $\alpha=0.10$}
+\end{table}Nemenyi's procedure rejects those hypotheses that have an unadjusted p-value $\le0.003571$.
+
+\pagebreak
+
+\subsection{Adjusted p-values}
+
+\begin{table}[!htp]
+\centering\scriptsize
+\begin{tabular}{cccc}
+i&hypothesis&unadjusted $p$&$p_{Neme}$\\
+\hline1&DSC-S vs .MLPClassifier&0&0\\
+2&DSC-R vs .MLPClassifier&0&0\\
+3&REA vs .MLPClassifier&0&0\\
+4&DSC-S vs .OUSE&0&0\\
+5&DSC-S vs .KMeanClustering&0&0\\
+6&LearnppCDS vs .MLPClassifier&0&0\\
+7&DSC-R vs .OUSE&0&0\\
+8&DSC-R vs .KMeanClustering&0&0\\
+9&REA vs .OUSE&0&0\\
+10&KMeanClustering vs .REA&0&0\\
+11&DSC-S vs .LearnppNIE&0&0\\
+12&LearnppNIE vs .MLPClassifier&0&0\\
+13&LearnppCDS vs .OUSE&0&0\\
+14&KMeanClustering vs .LearnppCDS&0&0.000002\\
+15&DSC-R vs .LearnppNIE&0&0.000011\\
+16&LearnppNIE vs .REA&0.000028&0.000772\\
+17&DSC-S vs .LearnppCDS&0.000067&0.001868\\
+18&LearnppNIE vs .OUSE&0.00091&0.025492\\
+19&KMeanClustering vs .MLPClassifier&0.001441&0.040336\\
+20&KMeanClustering vs .LearnppNIE&0.004621&0.129379\\
+21&OUSE vs .MLPClassifier&0.006894&0.193036\\
+22&DSC-R vs .LearnppCDS&0.010685&0.299172\\
+23&LearnppCDS vs .LearnppNIE&0.011884&0.332746\\
+24&DSC-S vs .REA&0.020855&0.583933\\
+25&LearnppCDS vs .REA&0.093533&2.61891\\
+26&DSC-R vs .DSC-S&0.151341&4.237553\\
+27&DSC-R vs .REA&0.381142&10.671988\\
+28&KMeanClustering vs .OUSE&0.628044&17.585239\\
+\hline
+\end{tabular}
+\caption{Adjusted $p$-values}
+\end{table}
+
+\end{landscape}
+\end{document}
